@@ -27,27 +27,27 @@ blueprint:
 
     ```
 
-    Spiele den Künstler Pink Floyd in der Küche
+    Spiel|Spiele den Künstler Pink Floyd in der Küche
 
     Höre das Album Jagged Little Pill im Arbeitszimmer
 
     Höre das Album Greatest Hits vom Künstler James Taylor in der Küche
 
-    Spiele den Titel New Years Day im Schlafzimmer
+    Spiel|Spiele den Titel New Years Day im Schlafzimmer
 
-    Spiele den Titel New Years Day im Schlafzimmer im Radiomodus
+    Spiel|Spiele den Titel New Years Day im Schlafzimmer im Radiomodus
 
-    Spiele das Lied A Hard Days Night von Billy Joel im Schlafzimmer
+    Spiel|Spiele das Lied A Hard Days Night von Billy Joel im Schlafzimmer
 
     Höre die Playlist Classic Rock im Arbeitszimmer
 
     Höre das Radio BBC Radio 1 im Schlafzimmer
 
-    Spiele das Album Classical Nights auf dem Schlafzimmer-Sonos-Lautsprecher
+    Spiel|Spiele das Album Classical Nights auf dem Schlafzimmer-Sonos-Lautsprecher
 
     Höre die Platte Classical Nights auf dem Schlafzimmer-Sonos-Lautsprecher
 
-    Spiele die Band U2
+    Spiel|Spiele die Band U2
 
     ```
   '
@@ -63,23 +63,23 @@ blueprint:
 triggers:
   - trigger: conversation
     command:
-      - "(spiele|höre) [das ](album|platte|sammlung|single) {media_name} [von [(dem|der) ](künstler|band|gruppe) {artist}] [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
+      - "(spiel|spiele|höre) [das ](album|platte|sammlung|single) {media_name} [von [(dem|der) ](künstler|band|gruppe) {artist}] [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
     id: album
   - trigger: conversation
     command:
-      - "(spiele|höre) [das ](song|titel|lied) {media_name} [von [(dem|der) ](künstler|band|gruppe) {artist}] [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
+      - "(spiel|spiele|höre) [das ](song|titel|lied) {media_name} [von [(dem|der) ](künstler|band|gruppe) {artist}] [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
     id: track
   - trigger: conversation
     command:
-      - "(spiele|höre) [(den|die) ](künstler|band|gruppe) {media_name} [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
+      - "(spiel|spiele|höre) [(den|die) ](künstler|band|gruppe) {media_name} [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
     id: artist
   - trigger: conversation
     command:
-      - "(spiele|höre) [(den|das) ]((radiosender)|(radio)|(sender)) {media_name} [(im|auf|über) [dem ]{area_or_player_name}]"
+      - "(spiel|spiele|höre) [(den|das) ]((radiosender)|(radio)|(sender)) {media_name} [(im|auf|über) [dem ]{area_or_player_name}]"
     id: radio
   - trigger: conversation
     command:
-      - "(spiele|höre) [die ](wiedergabeliste|playlist) {media_name} [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
+      - "(spiel|spiele|höre) [die ](wiedergabeliste|playlist) {media_name} [(im|auf|über) [dem ]{area_or_player_name}][ (mit|im) {radio_mode}]"
     id: playlist
 conditions: []
 actions:
